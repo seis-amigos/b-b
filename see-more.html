@@ -36,32 +36,36 @@
         
   
    
-    <img src="images/headerImg.png" alt="" class="main-image">
+    <img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage">
  
     <h2 class="h2"> ONE BOOK AWAY TO MEET YOUR HOUSE </h2>
+    <h2 class="h2" id="typeofhouse"> </h2>
+    <h2 class="h2" id="locationofhouse"> </h2>
+    <h2 class="h2" id="decriptionofhouse"> </h2>
+    <h2 class="h2" id="priceofhouse"> </h2>
+    <img src="" alt="" id="houseimage2">
+    <img src="" alt="" id="houseimage3">
 
     <br>
-    <br>
-    <br>
+    
 
     <div class="container">
         <form id="userform">
             <label class="name1" for="fname">Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="e.g. John Smith">
+            <input type="text" id="fname" name="firstname" placeholder="e.g. John Smith" required>
             <br>
             <label class="center1" for="phoneNumber">Phone Number</label>
-            <input type="number" id="phoneNumber" name="phoneNumber" placeholder="e.g. +962XXXXXXXXX">
+            <input type="number" id="phoneNumber" name="phoneNumber" placeholder="e.g. +962XXXXXXXXX" required>
             <br>
             <label class="email2" for="email"> Email </label>
-            <input type="email" name="email" id="email" placeholder="e.g. joh.Smith@gmail.com">
+            <input type="email" name="email" id="email" placeholder="e.g. joh.Smith@gmail.com" required>
             <br>
             <label class="center1" for="date"> Meeting Date </label>
-            <input type="text" name="date" id="date" placeholder="e.g. 26/12/1993">
+            <input type="text" name="date" id="date" placeholder="e.g. 26/12/1993" required>
             <br>
             <label class="center1" for="hour"> Meeting Hour </label>
-            <input type="text" name="hour" id="hour" step="any" placeholder="e.g. 18:00">
+            <input type="text" name="hour" id="hour" step="any" placeholder="e.g. 18:00" required>
             <br>
-            </select>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -82,6 +86,6 @@
         
         <p class="copyright">Bayt Albuyut © 2021</p>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/see_more.js"></script>
 </body>
 </html>
