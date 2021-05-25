@@ -83,7 +83,7 @@ header #navbarContainer ul
 {
   margin-right: 100px;
 }
-#navbarContainer li a
+#navbarformContainerner li a
 {
   text-transform: uppercase;
   text-decoration: none;
@@ -480,7 +480,163 @@ footer
 
 /* ------------------------------------------------------- */
 
+/* Working on the new form */
 
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  }
+  h2 {
+  margin: 0 0 0 8px;
+  color: white;
+  }
+/* to make it two blocks */
+
+  .main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.5); 
+  }
+
+left part text
+  .left-part, form {
+  padding: 25px;
+  }
+
+
+/* 
+  .left-part {
+  text-align: center;
+  }
+*/
+/*
+  .fa-graduation-cap {
+  font-size: 72px;
+  }
+*/
+/* background color */
+
+ #addHouseForm {
+  background-image: url("../img/pika.png");
+  background-size: cover;
+  /* background: rgba(0, 0, 0, 0.7);  */
+  }
+
+  
+
+/* to move the word below the pen */
+  .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+
+
+/* to make it below each other
+.info {
+  display: flex;
+  flex-direction: column;
+  } */
+
+/* to make changes on the tabs inside  */
+input, select {
+  padding: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-right: 20px;
+  }
+
+/* textarea, select {
+  padding: 5px;
+  margin-bottom: 29px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding-right: 93px;
+  color: white;
+  } */
+ 
+/* option:focus 
+ {
+  border: none;
+  } */
+
+  #selectType{
+  color: white;
+  /* background-color: #4c4c4c; */
+  border: none;
+  width: 15%;
+  border-bottom:1px solid white;  
+  }
+
+  textarea::placeholder {
+  color: white;
+  }
+
+ input::placeholder {
+  color: #eee;
+  }
+
+
+  .btn-item {
+  display: inline-block;
+  margin: 20px 5px 0;
+  }
+
+   input[type="submit"] 
+   {
+  width: 15%;
+  padding: 10px 5px;
+  margin-top: 20px;
+  border-radius: 5px; 
+  border: none;
+  background: #26a9e0; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  }
+
+  .close {
+  width: 5%;
+  padding: 10px 5px;
+  margin-top: 20px;
+  border-radius: 5px; 
+  border: none;
+  background: #26a9e0; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  text-align: center;
+  }
+
+  button:hover, .btn-item:hover {
+  background: #85d6de;
+  color: black;
+  }
+/* block for the body */
+  @media (min-width: 568px) {
+  html, body {
+  height: 100%;
+  }
+}
+  .main-block {
+  flex-direction: row;
+  height: calc(100% - 50px);
+  }
+/* block for the body */
+
+/* Working on the new form*/
 
     /* ------------------------------------------------------ */
 
@@ -610,3 +766,6 @@ letter-spacing: 1px;
   /* padding: 10px 40px; */
   border-radius: 12px;
  }
+
+ /*-------------------------------------------------------Search Tab -------------------------------------------------------*/
+
