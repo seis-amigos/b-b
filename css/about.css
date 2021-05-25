@@ -12,14 +12,14 @@ html,body
 
 header
 {
-    height: 57vh;    
+    height: 50vh;    
     background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.137)),url('https://www.nwhm.com/sites/default/files/2018-11/Matterport_833x450.gif');
     background-size: cover;
     background-position: top;
     position: relative;
     display: block;
     padding: 20px;
-    clip-path: polygon(0 0 ,100% 0 ,100% 45vh ,0 100%);
+    clip-path: polygon(0 0 ,100% 0 ,100% 40vh ,0 100%);
     text-align: center;
 }
 #logo
@@ -60,8 +60,8 @@ header #navbarContainer ul
 .para-title {
   display: block;
   font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: 6rem;
+  font-weight: 1000;
+  letter-spacing: 2rem;
   text-transform: uppercase;
   /* padding-bottom: 50px; */
   /* position: relative;
@@ -70,6 +70,7 @@ header #navbarContainer ul
 }
 .header-para
 {
+ 
     color:#fff ;
     display: block;
     font-size: 1rem;
@@ -77,13 +78,14 @@ header #navbarContainer ul
     text-align: justify;
     margin-left:28%;
     font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 8px;
 
     
     
 }
 .space
 {
+  
   margin-right: 100px;
 }
 #navbarContainer li a

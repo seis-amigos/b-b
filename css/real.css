@@ -12,14 +12,14 @@ html,body
 
 header
 {
-    height: 57vh;    
-    background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8)),url('../images/headerImg.png');
+    height: 50vh;    
+    background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.137)),url('../images/headerImg.png');
     background-size: cover;
     background-position: top;
     position: relative;
     display: block;
     padding: 20px;
-    clip-path: polygon(0 0 ,100% 0 ,100% 45vh ,0 100%);
+    clip-path: polygon(0 0 ,100% 0 ,100% 40vh ,0 100%);
     text-align: center;
 }
 #logo
