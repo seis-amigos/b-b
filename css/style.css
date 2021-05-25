@@ -61,7 +61,7 @@ header #navbarContainer ul
 {
     display: block;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight:1000;
     letter-spacing: 6rem;
     text-transform: uppercase;
 }
@@ -74,14 +74,15 @@ header #navbarContainer ul
     text-align: justify;
     margin-left:28%;
     font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
     
     
 }
 .space
 {
-  margin-right: 100px;
+  /* margin-right: 100px; */
+  margin-left: 80px;
 }
 #navbarContainer li a
 {
@@ -174,7 +175,7 @@ header #navbarContainer ul
 }
 #heading
 {
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
     text-align: center;
     
 }
