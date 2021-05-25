@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
+   
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,10 @@
     <title>Home</title>
 </head>
 <body>
+    <div id="waiting">
+        <img src="https://icon-library.com/images/progress-icon-gif/progress-icon-gif-21.jpg" alt=""><br>
+        <h2>waiting Please</h2>
+    </div>
     <header>
         <div id="navbarContainer">
             <div id="logo" class="logo">
@@ -18,7 +23,7 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="real.html" id="store-btn">Real Estate</a></li>
+                <li><a href="real_estate.html" id="store-btn">Real Estate</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
@@ -26,31 +31,76 @@
         <div class="header-para">
             
         </div>
+        <div id="addHouse">
+            <div class="add-house-contianer">
+                <p id="sell-house">Do you have a house you want to sell?</p>
+                <button class="add-btn" id="addBtn">I offer my house for sale</button>
+                
+            </div>
+        </div>
         
     </header>
 
     <main>
+        
+        <div id="formContainer" class="form-container">
+            <div class="add-form" id="addform">
+                <span class="close">&times;</span>
+                <form id="addHouseForm" class="add-house-form" >
+                    <label for="select">Type</label>
+                    <select name="select" id="selectType">
+                        <option value="Villa">Villa</option>
+                        <option value="Department">Department</option>
+                        <option value="small house">small house</option>
+                    </select>
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" required>
+                    <label for="Area">Area/m<sup>2</sup> </label>
+                    <input type="text" name="Area" id="Area" required>
+                    <label for="briefDesc">Brief Description</label>
+                    <input type="text" name="briefDesc" id="briefDesc" required>
+                    <br>
+                    <label for="price">price $</label>
+                    <input type="number" name="price" id="price" required>
+                    <label for="image1">Image 1 path</label>
+                    <input type="text" id="image1" name="image1" required>
+                    <label for="image2">Image 2 path</label>
+                    <input type="text" id="image2" name="image2" >
+                    <label for="image3">Image 3 path</label>
+                    <input type="text" id="image3" name="image3" >
+                    <input type="submit"  value="Add House" >
+                </form>
+            </div>
+            </div>
+            <div id="searchContianer">
+                <form id="searchForm" class="search-form">
+                    <fieldset>
+                        <legend>Search</legend>
+                        <input type="text" placeholder="Search" id="input" class="input">
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </div>
+            
         <section id="cardHouses">
             <div class="house-card">
                 <div class="house-card-ineer">
                     <div class="house-card-front">
-                       <div class="card-header1"></div>
+                       <div class="card-header"></div>
                        <div class="house-info">
-                           <p>Villa</p>
+                           <p class="type">Villa</p>
                            <p>
-                               Private Villa , with 2-car attached garage , a shaded front porch !
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, dolore!
                            </p>
                        </div>
-                       <div class="house-price">
-                           $155.000
-                       </div>
+                       <div class="house-price">test</div>
                     </div>
                     <div class="house-card-back">
                         <div id="listContainer">
                             <ul>
-                                <li>Location : Amman JORDAN</li>
-                                <li>Area :1320 M2</li>
-                                <li>Inclode 3 unites </li>
+                                <li>Location</li>
+                                <li>Area</li>
+                                <li>3 room</li>
                             </ul>
                         </div>
                         <div id="btnContainer">
@@ -65,28 +115,17 @@
             <div class="house-card">
                <div class="house-card-ineer">
                    <div class="house-card-front">
-                      <div class="card-header2"></div>
+                      <div class="card-header"></div>
                       <div class="house-info">
-                           <p>Villa </p>
-                           <p>Private Villa , in a quiet and upscale place with a garden and there is a tree house</p>
+                           <p class="type">Lorem.</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
                        </div>
                        <div class="house-price">
-                           $130.000
+                           $2000
                        </div>
                    </div>
                    <div class="house-card-back">
-                    <div id="listContainer">
-                        <ul>
-                            <li>Location : salt JORDAN</li>
-                            <li>Area :1500 M2</li>
-                            <li>Inclode 4 unites </li>
-                        </ul>
-                    </div>
-                    <div id="btnContainer">
-                        <button class="card-btn" id="cardBtn">
-                            See more
-                        </button>
-                    </div>
+
                    </div>
                </div>
 
@@ -94,28 +133,15 @@
            <div class="house-card">
                <div class="house-card-ineer">
                    <div class="house-card-front">
-                      <div class="card-header3"></div>
+                      <div class="card-header"></div>
                       <div class="house-info">
-                           <p>Lorem.</p>
+                           <p class="type">Lorem.</p>
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
                        </div>
-                       <div class="house-price">
-                           $55.000
-                       </div>
+                       <div class="house-price">$2000</div>
                    </div>
                    <div class="house-card-back">
-                    <div id="listContainer">
-                        <ul>
-                            <li>Location : Amman JORDAN</li>
-                            <li>Area :1320 M2</li>
-                            <li>Inclode 3 unites </li>
-                        </ul>
-                        <div id="btnContainer">
-                            <button class="card-btn" id="cardBtn">
-                                See more
-                            </button>
-                        </div>
-                    </div>
+
                    </div>
                </div>
 
@@ -123,28 +149,17 @@
            <div class="house-card">
                <div class="house-card-ineer">
                    <div class="house-card-front">
-                      <div class="card-header4"></div>
+                      <div class="card-header"></div>
                       <div class="house-info">
                            <p>Lorem.</p>
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
                        </div>
                        <div class="house-price">
-                           $145.000
+                           $2000
                        </div>
                    </div>
                    <div class="house-card-back">
-                    <div id="listContainer">
-                        <ul>
-                            <li>Location : Amman JORDAN</li>
-                            <li>Area :1320 M2</li>
-                            <li>Inclode 3 unites </li>
-                        </ul>
-                        <div id="btnContainer">
-                            <button class="card-btn" id="cardBtn">
-                                See more
-                            </button>
-                        </div>.
-                    </div>
+
                    </div>
                </div>
 
@@ -155,7 +170,7 @@
        <section id="cardHouses2">
            
       </section>
-       
+     
     </main>
     <footer class="footer-basic ">
         <div id="footer-logo" class="logo">
@@ -166,9 +181,10 @@
         </div>
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
         
-        <p id="email">baytalbuyut@gmail.com </p>
+   
         <p class="copyright">Bayt Albuyut © 2021</p>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/real.js"></script>
+    
 </body>
 </html>
