@@ -135,18 +135,22 @@ header #navbarContainer ul
 }
 /* ----------------------------------------------------------- */
 /* ------------------------------------------------------- */
+main {
+  margin-bottom: 123px;
+}
+ /* --------------------------------footer----------------------- */
   
 footer
 {
-    height: 37vh;    
+    height: 35vh;    
     background-size: cover;
     background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8));
-    
+    background-position: top;
     position: relative;
     display: block;
-    clip-path: polygon(0 30% ,100% 0 ,100% 100% ,0 100%);
+    clip-path:  polygon(0% 50% ,100% 0 ,100% 100% ,0 100%);
     overflow: hidden;
-    
+    margin-top: -120px;
     z-index: 80;
    text-align: center;
     color:#4b4c4d;
@@ -157,21 +161,49 @@ footer
     font-size: 30px;
     font-family: 'Pattaya', sans-serif;
     color: #fff;
-    width: 100%;
+    
 }
 .center
 {
   text-align: center;
-  margin-left: 33rem;
+  margin-left: 38rem;
   
 }
   
-
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:1.2rem;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+    display: inline-block;
+  }
+  
+  .footer-basic ul a {
+    color:#fff;
+    text-decoration:none;
+    opacity:0.8;
+    
+  }
+  .footer-basic li:hover
+  {
+    transform: scale(1.2);
+  }
+  .footer-basic ul a:hover {
+    opacity:1;
+    
+  }
   
   .footer-basic .social {
     text-align:center;
-    padding-bottom:25px;
-    margin-top: 2rem;
+    padding-bottom:0px;
+    margin-top: -1rem;
+    display: flex;
   }
   
   .footer-basic .social  a {
@@ -190,25 +222,39 @@ footer
   
   .footer-basic .social  a:hover {
     opacity:0.9;
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
   
   .footer-basic .copyright {
-    margin-top:5px;
+    margin-top:15px;
     text-align:center;
     font-size:13px;
     color:rgb(231, 231, 231);
     margin-bottom:0;
+    font-weight: bolder;
   }
-
-  .main-image{
-    width:100%;
-    height:350px;
-   display: inline;
-   margin-top: .8px;
-
+  #footerQuickLink
+  {
+    
+    width: 359px;
+    height: 143px;
+    float: right;
+    margin-right: 9px;
+    margin-top: -160px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    
   }
-
+  #footerQuickLink a
+  {
+    font-size: 1rem;
+  }
+  #footerQuickLink h4
+  {
+    color: white;
+    font-size: 1.4rem;
+    
+  }
 
  
 
