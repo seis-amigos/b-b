@@ -61,8 +61,8 @@ header #navbarContainer ul
 {
     display: block;
     font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 6rem;
+    font-weight: 1000;
+    letter-spacing: 2rem;
     text-transform: uppercase;
 }
 .header-para
@@ -223,7 +223,7 @@ header #navbarContainer ul
     height: 40%;
     background-color: #fff;
     border-bottom-left-radius: 50%;
-    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/villa.jpg');
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.123)),url('../images/villa.jpg');
     background-size: cover;
     
 }
@@ -233,7 +233,7 @@ header #navbarContainer ul
     height: 40%;
     background-color: #fff;
     border-bottom-left-radius: 50%;
-    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/villa3.jpg');
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.123)),url('../images/villa3.jpg');
     background-size: cover;
     
 }
@@ -243,7 +243,7 @@ header #navbarContainer ul
     height: 40%;
     background-color: #fff;
     border-bottom-left-radius: 50%;
-    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/house.jpg');
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.123)),url('../img/house.jpg');
     background-size: cover;
     
 }
@@ -253,7 +253,7 @@ header #navbarContainer ul
     height: 40%;
     background-color: #fff;
     border-bottom-left-radius: 50%;
-    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/home.jpg');
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.123)),url('../images/home.jpg');
     background-size: cover;
     
 }
@@ -304,7 +304,7 @@ header #navbarContainer ul
   background-color: #fff;
   animation: moveInBottom 0.5s ease-in-out infinite both;
   color:rgba(40,180,133,0.8) ;
-  padding: 10px 40px;
+  /* padding: 10px 40px; */
   border-radius: 12px;
 }
  
@@ -505,4 +505,108 @@ footer
    color: rgb(255, 255, 255);
    font-size: 1.9;
    text-shadow: 0 0 4px rgb(63, 240, 63);
+ }
+
+ @keyframes slide-in-fwd-bottom {
+  0% {
+    transform: translateZ(-1400px) translateY(800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+ .add-btn{
+  animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  right: 50px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #285A84 ;
+  margin-top: 3rem;
+  font-family: 'Nunito Sans', sans-serif;
+margin-left: 250px;  
+font-weight: bolder;
+letter-spacing: 1px;
+ }
+
+ .add-btn:hover{
+  background-color:rgba(40,180,133,0.8) ;
+  animation: moveInBottom 0.5s ease-in-out infinite both;
+  color:#fff ;
+  /* padding: 10px 40px; */
+  border-radius: 12px;
+ }
+
+
+ #submit{
+
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  /* right: 50px; */
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color:rgba(40,180,133,0.8) ;
+  color: #fff ;
+  margin-top: 3rem;
+  font-family: 'Nunito Sans', sans-serif;
+/* margin-left: 30px; */
+font-weight: bolder;
+letter-spacing: 1px;
+
+ }
+
+ #submit:hover{
+  background-color:rgba(40,180,133,0.8) ;
+  animation: moveInBottom 0.5s ease-in-out infinite both;
+  color:#fff;
+  /* padding: 10px 40px; */
+  border-radius: 12px;
+ }
+
+.input{
+
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  /* right: 50px; */
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(40,180,133,0.8) ;
+  color: #fff ;
+  margin-top: 3rem;
+  font-family: 'Nunito Sans', sans-serif;
+/* margin-left: 250px;   */
+font-weight: bolder;
+letter-spacing: 1px;
+
+ }
+
+.input:hover{
+  background-color:#fff ;
+  animation: moveInBottom 0.5s ease-in-out infinite both;
+  color:black;
+  /* padding: 10px 40px; */
+  border-radius: 12px;
  }
