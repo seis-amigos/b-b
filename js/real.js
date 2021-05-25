@@ -83,6 +83,7 @@ addHouseForm.addEventListener('submit', function (event) {
 getHouse();
 let cardArray = [];
 function cardRender(type, location, area, decription, price, images) {
+    console.log(images);
     let houseCard = document.createElement('div');
     let housCardInner = document.createElement('div');
     let houseCardFront = document.createElement('div');
@@ -115,7 +116,6 @@ function cardRender(type, location, area, decription, price, images) {
         //---------------- back
         //---------------------
         cardHeader.setAttribute('class', 'card-header');
-
         houseInfo.setAttribute('class', 'house-info');
 
         houseInfo.innerHTML = `
@@ -142,7 +142,13 @@ function cardRender(type, location, area, decription, price, images) {
         btnContainer.setAttribute('id', 'btnContainer');
         houseCardBack.appendChild(btnContainer);
         btnContainer.innerHTML = `<button class="card-btn" id="cardBtn${i}"  onClick="getID(this.id)">See more</button>`;
+        // cardHeader.setAttribute('id',`hederImg${i}`);
+        // let cardHeaderImg=document.getElementById(`hederImg${i}`);
+        // cardHeaderImg.style.backgroundImage=`url(${images[i]})`;
+        
     }
+    
+   
 }
 // ---------------------------------------------------------
 // Get the waiting id
@@ -172,36 +178,36 @@ let searchForm = document.getElementById('searchForm');
 //     console.log(alls[i]);
 
 // }
-let x = [];
-let housePrice = document.getElementsByClassName('type');
-for (let i = 0; i < housePrice.length; i++) {
-    x.push(housePrice[i].textContent);
-}
-searchForm.addEventListener('submit', function (event) {
+// let x = [];
+// let housePrice = document.getElementsByClassName('type');
+// for (let i = 0; i < housePrice.length; i++) {
+//     x.push(housePrice[i].textContent);
+// }
+// searchForm.addEventListener('submit', function (event) {
 
-    event.preventDefault();
-    let userInput = event.target.input.value;
-    // let fillter=event.target.value.toUpperCase();
+//     event.preventDefault();
+//     let userInput = event.target.input.value;
+//     // let fillter=event.target.value.toUpperCase();
 
-    let houseCard = document.getElementsByClassName('house-card');
-    // console.log(housePrice[0].textContent);
+//     let houseCard = document.getElementsByClassName('house-card');
+//     // console.log(housePrice[0].textContent);
 
 
-    for (let i = 0; i < houseCard.length; i++) {
-        if (x[i] === userInput.trim()) {
-            houseCard[i].style.display = '';
+//     for (let i = 0; i < houseCard.length; i++) {
+//         if (x[i] === userInput.trim()) {
+//             houseCard[i].style.display = '';
 
-        }
-        else if (userInput.length === 0 || userInput.trim() === '') {
-            houseCard[i].style.display = '';
-        }
-        else {
-            houseCard[i].style.display = 'none';
-        }
-    }
-    getHouse();
+//         }
+//         else if (userInput.length === 0 || userInput.trim() === '') {
+//             houseCard[i].style.display = '';
+//         }
+//         else {
+//             houseCard[i].style.display = 'none';
+//         }
+//     }
+//     getHouse();
 
-});
+// });
 
 //------------------------------------------LocalStorge --------------------------------
 
