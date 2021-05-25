@@ -108,7 +108,7 @@ header #navbarContainer ul
   background-color:rgba(40,180,133,0.8) ;
     animation: moveInBottom 0.5s ease-in-out infinite both;
     color: #fff;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
 }
 
 .header-btn button
@@ -136,7 +136,7 @@ header #navbarContainer ul
     background-color:rgba(40,180,133,0.8) ;
     animation: moveInBottom 0.5s ease-in-out infinite both;
     color: #fff;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
 
 }
 @keyframes moveInBottom {

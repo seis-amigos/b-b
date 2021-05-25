@@ -107,7 +107,7 @@ header #navbarContainer ul
   background-color:rgba(40,180,133,0.8) ;
     animation: moveInBottom 0.5s ease-in-out infinite both;
     color: #fff;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
 }
 
 
@@ -131,7 +131,7 @@ header #navbarContainer ul
 {
     animation: none;
     border: 1px solid #fff;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
 }
 /* ----------------------------------------------------------- */
 /* ------------------------------------------------------- */

@@ -112,7 +112,7 @@ header #navbarContainer ul
   background-color:rgba(40,180,133,0.8) ;
     animation: moveInBottom 0.5s ease-in-out infinite both;
     color: #fff;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
 }
 
 .header-btn button
@@ -311,18 +311,19 @@ a{
 footer
 {
     height: 35vh;    
+
     background-size: cover;
     background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8));
-    background-position: top;
     position: relative;
     display: block;
     clip-path:  polygon(0% 50% ,100% 0 ,100% 100% ,0 100%);
     overflow: hidden;
-    margin-top: -120px;
     z-index: 80;
+
    text-align: center;
     color:#4b4c4d;
 }
+
 .footer-basic #footer-logo
 {
     margin-top: 3rem;
