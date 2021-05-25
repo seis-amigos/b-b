@@ -64,9 +64,9 @@ header #navbarContainer ul
   letter-spacing: 6rem;
   text-transform: uppercase;
   /* padding-bottom: 50px; */
-  position: relative;
+  /* position: relative;
   bottom: 90px;
-  right: 50px;
+  right: 50px; */
 }
 .header-para
 {
@@ -403,10 +403,10 @@ footer
     color:rgb(231, 231, 231) ;
     font-size: 20px;
   }
-  .logo img {
+  /* .logo img {
     width: 8rem;
     font-family: 'Pattaya', sans-serif;
     color: #fff;
     position: relative;
     right: 55px;
-}
+} */
