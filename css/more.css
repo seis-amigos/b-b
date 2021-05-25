@@ -340,7 +340,17 @@ main form input ::placeholder {
     box-sizing: border-box;
     text-align: center;
   }
-
+#hour
+{
+  width: 50%;
+  padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
   input[type=date], select {
     width: 50%;
     padding: 12px 20px;
@@ -383,3 +393,83 @@ main form input ::placeholder {
     text-align: center;
   } 
 
+
+  
+  /* -------------------------------------------- */
+
+ .formBox
+ {
+   width: 60%;
+   height: 40%;
+   background-color: rgb(255, 255, 255);
+   position: absolute;
+   margin:70% 0 0 20%;
+   display: none;
+  
+   padding: 10px;
+   border-radius: 20px;
+   text-align: center;
+   box-shadow: 0 0 8px rgba(0, 0, 0, 0.514);
+   
+ }
+ 
+ #close
+ {
+   float: right;
+   display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    cursor: pointer;
+ }
+
+ #close:hover
+ {
+  background-color: #791922;
+  border-color: #791922;
+ }
+ .boxContant span
+ {
+   font-size: 1.5rem;
+   font-weight: bold;
+   background-color: rgb(243, 243, 243);
+   padding: 10px;
+   border-radius: 20px;
+   color: black;
+
+ }
+ 
+ .boxContant p
+ {
+    font-weight: 700;
+    margin-top: 20px;
+    color: black;
+
+ }
+
+ .boxContant .green
+ {
+   color: green;
+   text-shadow: 0 0 4px  rgb(255, 255, 255);
+   text-decoration: underline;
+ }
+
+ .info-p
+ {
+   font-size: 1.2rem;
+   font-weight: bold;
+ }

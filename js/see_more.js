@@ -93,7 +93,47 @@ console.log(event);
     new User(name,phone,email,date,hour);
 
     setUser();
+    showBox(name,phone,email,date,hour);
+    
+    // name=document.getElementById('fname');
+    // phone=document.getElementById('phoneNumber');
+    // email=document.getElementById('email');
+    // date=document.getElementById('date');
+    
+    // name.textContent='';
+    // phone.textContent='';
+    // email.textContent='';
+    // date.textContent='';
 });
 
 
 
+
+function showBox(name,phone,email,date,hour) {
+    let na,pho,ema,fullDa,formBox;
+
+    na=document.getElementById('formName');
+    pho=document.getElementById('formPhone');
+    ema=document.getElementById('formEmail');
+    fullDa=document.getElementById('formDate');
+
+    na.textContent='Name: '+name;
+    pho.textContent='Phone Number: '+phone;
+    ema.textContent='Email:'+email;
+    fullDa.textContent='The chosen date & hour:'+date+' at '+hour;
+    
+
+    formBox=document.getElementById('formBox');
+    formBox.style.display='block';
+
+    
+
+
+}
+
+let close=document.getElementById('close');
+
+close.addEventListener('click',function(event){
+    event.preventDefault();
+    formBox.style.display='none';
+});
