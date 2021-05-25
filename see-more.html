@@ -10,6 +10,19 @@
     <title>Form Page</title>
 </head>
 <body>
+    <div id="formBox" class="formBox">
+        <button id="close">X</button>
+        <div id="boxContant" class="boxContant">
+            <span>Thank you for filling the booking form</span>
+            <p class="green">We will contact with you as soon as possible </p>
+            <p class="info-p"> Your information:</p>
+            <p id="formName">Name:</p>
+            <p id="formPhone">Phone Number:</p>
+            <p id="formEmail">Email:</p>
+            <p id="formDate">The chosen date & hour: 22/11/1996 at 03:00 </p>
+
+        </div>
+    </div>
     <header>
         <div id="navbarContainer">
             <div id="logo" class="logo">
@@ -42,7 +55,7 @@
         
   
    
-    <!-- <img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage"> -->
+    <img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage">
  
     <!-- <h2 class="h2"> ONE BOOK AWAY TO MEET YOUR HOUSE </h2> -->
     <h2 class="h2" id="typeofhouse"> </h2>
@@ -69,8 +82,8 @@
             <label class="center1" for="date"> Meeting Date </label>
             <input type="text" name="date" id="date" placeholder="e.g. 26/12/1993" required>
             <br>
-            <label class="center1" for="hour"> Meeting Hour </label>
-            <input type="text" name="hour" id="hour" step="any" placeholder="e.g. 18:00" required>
+            <label class="center1" for="hour"> Meeting Hour </label><br>
+            <input type="time" name="hour" id="hour" step="any" placeholder="e.g. 18:00" min="09:00" max="18:00" required>
             <br>
             <input type="submit" value="Submit">
         </form>
