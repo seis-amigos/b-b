@@ -317,16 +317,15 @@ header #navbarContainer ul
 
 
 /* ------------------------------------------------------- */
-  
 footer
 {
-    height: 60vh;    
+    height: 35vh;    
     background-size: cover;
     background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8));
     background-position: top;
     position: relative;
     display: block;
-    clip-path: polygon(0 30% ,100% 0 ,100% 100% ,0 100%);
+    clip-path:  polygon(0% 50% ,100% 0 ,100% 100% ,0 100%);
     overflow: hidden;
     margin-top: -120px;
     z-index: 80;
@@ -335,16 +334,16 @@ footer
 }
 .footer-basic #footer-logo
 {
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-size: 30px;
     font-family: 'Pattaya', sans-serif;
     color: #fff;
-    width: 100%;
+    
 }
 .center
 {
   text-align: center;
-  margin-left: 43rem;
+  margin-left: 38rem;
   
 }
   
@@ -379,8 +378,9 @@ footer
   
   .footer-basic .social {
     text-align:center;
-    padding-bottom:25px;
-    margin-top: 2rem;
+    padding-bottom:0px;
+    margin-top: -1rem;
+    display: flex;
   }
   
   .footer-basic .social  a {
@@ -399,7 +399,7 @@ footer
   
   .footer-basic .social  a:hover {
     opacity:0.9;
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
   
   .footer-basic .copyright {
@@ -408,7 +408,31 @@ footer
     font-size:13px;
     color:rgb(231, 231, 231);
     margin-bottom:0;
+    font-weight: bolder;
   }
+  #footerQuickLink
+  {
+    
+    width: 359px;
+    height: 143px;
+    float: right;
+    margin-right: 9px;
+    margin-top: -160px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    
+  }
+  #footerQuickLink a
+  {
+    font-size: 1rem;
+  }
+  #footerQuickLink h4
+  {
+    color: white;
+    font-size: 1.4rem;
+    
+  }
+
 
   #email{
     text-align: center;
