@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans+Condensed:ital,wght@1,300&family=Oswald:wght@200&family=Pattaya&display=swap');
+
+html,body
+{
+    padding: 0;
+    margin: 0;
+    color: #285A84;
+    background-color: #f7f7f7;
+    overflow-x:hidden ;
+    
+}
+
+header
+{
+    height: 57vh;    
+    background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8)),url('../images/headerImg.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: block;
+    padding: 20px;
+    clip-path: polygon(0 0 ,100% 0 ,100% 45vh ,0 100%);
+    text-align: center;
+}
+#logo
+{
+  text-align: left;
+  width: 40%;
+}
+ .logo img
+{
+    width: 8rem;
+    font-family: 'Pattaya', sans-serif;
+    color: #fff;
+    
+}
+
+header #navbarContainer li
+{
+    display: inline-block;
+    margin: .0rem .5rem;
+    font-size: .9rem;
+    /* background-color: #fff;
+    padding: .8rem;
+    border-radius: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700; */
+    
+}
+#navbarContainer
+{
+  display: flex;
+}
+header #navbarContainer ul
+{
+  text-align: right;
+  width: 60%;
+  padding-top: 18px;
+}
+.para-title
+{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 6rem;
+    text-transform: uppercase;
+}
+.header-para
+{
+    color:#fff ;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: justify;
+    margin-left:28%;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 2px;
+
+    
+    
+}
+.space
+{
+  margin-right: 100px;
+}
+#navbarContainer li a
+{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  right: 50px;
+  font-size: .8rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #777;
+  font-weight: bolder;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #285A84;
+}
+#navbarContainer li a:hover
+{
+  background-color:rgba(40,180,133,0.8) ;
+    animation: moveInBottom 0.5s ease-in-out infinite both;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.header-btn button
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    right: 50px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #777;
+    margin-top: 3rem;
+    font-family: 'Nunito Sans', sans-serif
+    
+}
+.header-btn button:hover
+{
+    
+    background-color:rgba(40,180,133,0.8) ;
+    animation: moveInBottom 0.5s ease-in-out infinite both;
+    color: #fff;
+    padding: 10px 40px;
+
+}
+@keyframes moveInBottom {
+    0% {
+        box-shadow: 0 0 20px 0px #fff;
+                
+      }
+      50% {
+        
+        box-shadow: 0 0 10px 0px #fff;
+      }
+      100% {
+        
+        box-shadow: 0 0 20px 0px #fff;
+      }
+    
+}
+.header-btn button:active
+{
+    animation: none;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+}
+/* ----------------------------------------------------------- */
+#cardHouses , #cardHouses2
+{
+    padding: 3rem;
+    display: flex;  
+    margin-bottom: 95px;
+}
+
+.house-card
+{
+    background-color: transparent;
+    width: 15rem;
+    height:23rem;
+    perspective: 1000px;
+    margin: 0 40px;
+    
+    
+    
+}
+.house-card-ineer
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .6s;
+    transform-style:preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    
+}
+.house-card:hover .house-card-ineer
+{
+    transform: rotateY(180deg);
+    box-shadow: 0 0 50px 2px rgba(21, 255, 0, 0.205);
+}
+.house-card-front ,.house-card-back
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+}
+.house-card-front 
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+  
+.house-card-back 
+{
+    background-image:linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8));
+    color: white;
+    transform: rotateY(180deg);
+    
+}
+
+.card-header1
+{
+    height: 40%;
+    background-color: #fff;
+    border-bottom-left-radius: 50%;
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/villa.jpg');
+    background-size: cover;
+    
+}
+
+.card-header2
+{
+    height: 40%;
+    background-color: #fff;
+    border-bottom-left-radius: 50%;
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/villa3.jpg');
+    background-size: cover;
+    
+}
+
+.card-header3
+{
+    height: 40%;
+    background-color: #fff;
+    border-bottom-left-radius: 50%;
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/house.jpg');
+    background-size: cover;
+    
+}
+
+.card-header4
+{
+    height: 40%;
+    background-color: #fff;
+    border-bottom-left-radius: 50%;
+    background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.8)),url('../images/home.jpg');
+    background-size: cover;
+    
+}
+
+.house-info 
+{
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+.house-info p:nth-child(1)
+{
+    font-weight: 700;
+}
+.house-price
+{
+    margin-top: 27%;
+    width: 100%;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 0 0 4px rgb(156, 156, 156);
+}
+
+ #listContainer ul
+{
+   color: rgb(231, 231, 231); 
+} 
+
+ #cardBtn{
+  
+  text-transform: uppercase;
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #777;
+  margin-top: 2rem;
+  font-family: 'Nunito Sans', sans-serif
+
+}
+ #cardBtn:hover{
+  background-color: #fff;
+  animation: moveInBottom 0.5s ease-in-out infinite both;
+  color:rgba(40,180,133,0.8) ;
+  padding: 10px 40px;
+  border-radius: 12px;
+}
+ 
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+  
+footer
+{
+    height: 60vh;    
+    background-size: cover;
+    background-image: linear-gradient(to right bottom,#5EA669,rgba(8, 85, 59, 0.8));
+    background-position: top;
+    position: relative;
+    display: block;
+    clip-path: polygon(0 30% ,100% 0 ,100% 100% ,0 100%);
+    overflow: hidden;
+    margin-top: -120px;
+    z-index: 80;
+   text-align: center;
+    color:#4b4c4d;
+}
+.footer-basic #footer-logo
+{
+    margin-top: 6rem;
+    font-size: 30px;
+    font-family: 'Pattaya', sans-serif;
+    color: #fff;
+    width: 100%;
+}
+.center
+{
+  text-align: center;
+  margin-left: 43rem;
+  
+}
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:1.2rem;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+    display: inline-block;
+  }
+  
+  .footer-basic ul a {
+    color:#fff;
+    text-decoration:none;
+    opacity:0.8;
+    
+  }
+  .footer-basic li:hover
+  {
+    transform: scale(1.2);
+  }
+  .footer-basic ul a:hover {
+    opacity:1;
+    
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+    margin-top: 2rem;
+  }
+  
+  .footer-basic .social  a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social  a:hover {
+    opacity:0.9;
+    transform: scale(1.5);
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(231, 231, 231);
+    margin-bottom:0;
+  }
+
+  #email{
+    text-align: center;
+    color:rgb(231, 231, 231) ;
+    font-size: 20px;
+  }
