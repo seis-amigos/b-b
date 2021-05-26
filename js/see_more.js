@@ -30,8 +30,9 @@ function renderContant()
             houseimage2.src=allHouses[i].images[1];
             let houseimage3=document.getElementById('houseimage3');
             houseimage3.src=allHouses[i].images[2];
+            let housearea=document.getElementById('housearea');
+            housearea.textContent=allHouses[i].area;
         }
-        
     }
 }
 

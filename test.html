@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="css/real.css"> -->
-    <title>Real Estate</title>
+    <link rel="stylesheet" href="test.css">
+    <title>Form Page</title>
 </head>
 
 <body>
-    <div id="waiting">
-        <img src="https://icon-library.com/images/progress-icon-gif/progress-icon-gif-21.jpg" alt=""><br>
-        <h2>Please Wait...</h2>
+    <div id="formBox" class="formBox">
+        <button id="close">X</button>
+        <div id="boxContant" class="boxContant">
+            <span>Thank you for filling the booking form</span>
+            <p class="green">We will contact with you as soon as possible </p>
+            <p class="info-p"> Your information:</p>
+            <p id="formName">Name:</p>
+            <p id="formPhone">Phone Number:</p>
+            <p id="formEmail">Email:</p>
+            <p id="formDate">The chosen date & hour: 22/11/1996 at 03:00 </p>
+
+        </div>
     </div>
     <header>
         <div id="navbarContainer">
@@ -33,243 +42,83 @@
         </div>
         <div class="header-para">
 
-        </div>
-        <!-- <div id="addHouse">
-            <div class="add-house-contianer">
-                <p id="sell-house">SELL | BUY</p>
-                <button class="add-btn" id="addBtn">I offer my house for sale</button>
-                
-            </div> -->
 
+
+
+        </div>
         <div class="header-para">
-            <span class="para-title">SELL | BUY</span>
-            <button class="add-btn" id="addBtn">Add Home</button>
-        </div>
-        </div>
+            <span class="para-title">Bayt</span>
+            <span class="space"></span> “where dreams come true ”
+            <div class="header-para">
 
+            </div>
+            <!-- <h1 id="firsthead">Bayt Albuyut is where dreams come true</h1><br> -->
     </header>
 
     <main>
+
+
+
+        <img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage">
+
+
+        <h2 class="h2"> ONE BOOK AWAY TO MEET YOUR HOUSE </h2>
+
+
+        <div class="table-users">
+            <div class="header">House information</div>
+            
+            <table cellspacing="0">
+               <tr>
+                  <th>Picture</th>
+                  <th>Property Type</th>
+                  <th>Location</th>
+                  <th>Price</th>
+                  <th width="230">Description</th>
+               </tr>
+         
+               <tr>
+                  <td><img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage"></td>
+                  <td id="typeofhouse"></td>
+                  <td id="locationofhouse"></td>
+                  <td id="priceofhouse"></td>
+                  <td id="decriptionofhouse"> </td>
+               </tr>
         
+            </table>
+         </div>
 
-            <div class="title">
-                <h2>Register here</h2>
-            </div>
 
-                <div id="formContainer" class="form-container">
-                
-                    <div class="add-form" id="addform">
-                       
-                        <form id="addHouseForm" class="add-house-form" >
-                            <select name="select" id="selectType">
-                                <option value="Villa">Villa</option>
-                                <option value="Department">Department</option>
-                                <option value="small house">small house</option>
-                            </select>
-                            <input type="text" name="location" id="location"  placeholder="Location" required>
-                            <input type="text" name="Area" id="Area" placeholder="Area / M2" required>
-                            <input type="text" name="briefDesc" id="briefDesc" placeholder="Brief Discerption" required>
-                            <input type="number" name="price" id="price" placeholder="Price US" required>
-                            <input type="text" id="image1" name="image1" placeholder="Image Link" required>
-                            <input type="text" id="image2" name="image2" placeholder="Image Link (Optional)" >
-                            <input type="text" id="image3" name="image3" placeholder="Image Link (Optional)">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <input type="submit"  value="Add House" class=".btn-item" >
-                            <span class="close">Close</span>
-    
-    
-                        </form>
-    
-                    </div>
-                </div>
-        
-        <!-- <div id="formContainer" class="form-container">
-            <div class="add-form" id="addform">
-                <span class="close">&times;</span>
-                <form id="addHouseForm" class="add-house-form">
-                    <label for="select">Type</label>
-                    <select name="select" id="selectType">
-                        <option value="Villa">Villa</option>
-                        <option value="Department">Department</option>
-                        <option value="small house">small house</option>
-                    </select>
-                    <label for="location">Location</label>
-                    <input type="text" name="location" id="location" required>
-                    <label for="Area">Area/m<sup>2</sup> </label>
-                    <input type="text" name="Area" id="Area" required>
-                    <label for="briefDesc">Brief Description</label>
-                    <input type="text" name="briefDesc" id="briefDesc" required>
-                    <br>
-                    <label for="price">price $</label>
-                    <input type="number" name="price" id="price" required>
-                    <label for="image1">Image 1 path</label>
-                    <input type="text" id="image1" name="image1" required>
-                    <label for="image2">Image 2 path</label>
-                    <input type="text" id="image2" name="image2">
-                    <label for="image3">Image 3 path</label>
-                    <input type="text" id="image3" name="image3">
-                    <input type="submit" value="Add House">
-                </form>
-            </div>
-        </div> -->
+        <br>
 
-    
-        <div id="searchContianer">
-            <form id="searchForm" class="search-form">
-                <fieldset>
-                    <legend>Search</legend>
-                    <input type="text" placeholder="Search" id="input" class="input">
-                    <input type="submit" id="submit">
-                </fieldset>
+
+        <div class="container">
+            <form id="userform">
+                <label class="name1" for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder=" John Smith" required>
+                <br>
+                <label class="center1" for="phoneNumber">Phone Number</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder=" +962XXXXXXXXX" required>
+                <br>
+                <label class="email2" for="email"> Email </label>
+                <input type="email" name="email" id="email" placeholder=" John.Smith@gmail.com" required>
+                <br>
+                <label class="center1" for="date"> Meeting Date </label>
+                <input type="text" name="date" id="date" placeholder=" 26/12/1993" required>
+                <br>
+                <label class="center1" for="hour"> Meeting Hour </label><br>
+                <input type="time" name="hour" id="hour" step="any" placeholder=" 18:00" min="09:00" max="18:00"
+                    required>
+                <br>
+                <input type="submit" value="Submit">
             </form>
         </div>
 
-        <section id="cardHouses">
-            <div class="house-card">
-                <div class="house-card-ineer">
-                    <div class="house-card-front">
-                        <div class="card-header1"></div>
-                        <div class="house-info">
-                            <p class="type">Villa</p>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, dolore!
-                            </p>
-                        </div>
-                        <div class="house-price">$500.360</div>
-                    </div>
-                    <div class="house-card-back">
-                        <div id="listContainer">
-                            <ul>
-                                <li>Location:Amman Jordan</li>
-                                <li>Area 1500</li>
-                                <li>3 room</li>
-                                <li>2 garage</li>
-                            </ul>
-                        </div>
-                        <div id="btnContainer">
-                            <button class="card-btn" id="cardBtn">
-                                See more
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-            <div class="house-card">
-                <div class="house-card-ineer">
-                    <div class="house-card-front">
-                        <div class="card-header2"></div>
-                        <div class="house-info">
-                            <p class="type">Lorem.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
-                        </div>
-                        <div class="house-price">
-                            $829.500
-                        </div>
-               <div class="house-card-ineer">
-                   <div class="house-card-front">
-                      <div class="card-header2"></div>
-                      <div class="house-info">
-                           <p class="type">Apartment</p>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiapore facilis autem earum veniam vel, mollitia ut laudantium nemo ipsa omnis porro aliquid in perferendis tempora sed.</p>
-                       </div>
-                       <div class="house-price">
-                           $829.500
-                       </div>
-                   </div>
-                   <div class="house-card-back">
-                    <div id="listContainer">
-                        <ul>
-                            <li>Location : salt Jordan</li>
-                            <li>Area :1300</li>
-                            <li>3 units</li>
-                        </ul>
-                    </div>
-                    <div class="house-card-back">
-                        <div id="listContainer">
-                            <ul>
-                                <li>Location : salt Jordan</li>
-                                <li>Area :1300</li>
-                                <li>3 units</li>
-                            </ul>
-                        </div>
-                        <div id="btnContainer">
-                            <button class="card-btn" id="cardBtn">
-                                See more
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="house-card">
-                <div class="house-card-ineer">
-                    <div class="house-card-front">
-                        <div class="card-header3"></div>
-                        <div class="house-info">
-                            <p class="type">Lorem.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
-                        </div>
-                        <div class="house-price">$450.660</div>
-                    </div>
-                    <div class="house-card-back">
-                        <div id="listContainer">
-                            <ul>
-                                <li>Location</li>
-                                <li>Area</li>
-                                <li>3 room</li>
-                            </ul>
-                        </div>
-                        <div id="btnContainer">
-                            <button class="card-btn" id="cardBtn">
-                                See more
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="house-card">
-                <div class="house-card-ineer">
-                    <div class="house-card-front">
-                        <div class="card-header4"></div>
-                        <div class="house-info">
-                            <p>Lorem.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
-                        </div>
-                        <div class="house-price">
-                            $451.000
-                        </div>
-                    </div>
-                    <div class="house-card-back">
-                        <div id="listContainer">
-                            <ul>
-                                <li>Location</li>
-                                <li>Area</li>
-                                <li>3 room</li>
-                            </ul>
-                        </div>
-                        <div id="btnContainer">
-                            <button class="card-btn" id="cardBtn">
-                                See more
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <br>
-        <section id="cardHouses2">
-
-        </section>
 
     </main>
     <footer class="footer-basic ">
+
         <div id="footer-logo" class="logo">
             <div id="logo" class="center">
                 <img src="images/logo.png" alt="">
@@ -279,11 +128,18 @@
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
                     class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
                 href="#"><i class="icon ion-social-facebook"></i></a></div>
-
-
-        <p class="copyright">Bayt Albuyut © 2021</p>
+        <span class="copyright">Bayt Albuyut © 2021</span>
+        <div id="footerQuickLink">
+            <h4>QUICK LINKS</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="real.html">Real Estate</a></li>
+                <li><a href="sales.html">Homes for Sales</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
     </footer>
-    <script src="js/real.js"></script>
+    <script src="js/see_more.js"></script>
 
 </body>
 
