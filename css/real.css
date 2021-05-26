@@ -34,6 +34,33 @@ header
     color: #fff;
     
 }
+#navbarContainer li a
+{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  right: 50px;
+  font-size: .8rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #777;
+  font-weight: bolder;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #285A84;
+}
+#navbarContainer li a:hover
+{
+  background-color:rgba(40,180,133,0.8) ;
+    animation: moveInBottom 0.5s ease-in-out infinite both;
+    color: #fff;
+    /* padding: 10px 40px; */
+}
+
 
 header #navbarContainer li
 {
@@ -60,7 +87,7 @@ header #navbarContainer ul
 .para-title
 {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 1000;
     letter-spacing: 2rem;
     text-transform: uppercase;
@@ -217,7 +244,14 @@ header #navbarContainer ul
     transform: rotateY(180deg);
     
 }
-
+.card-header
+{
+  height: 40%;
+  background-color: #fff;
+  border-bottom-left-radius: 50%;
+  background-image: linear-gradient(to right bottom,#5ea6699f,rgba(143, 209, 186, 0.123));
+  background-size: cover;
+}
 .card-header1
 {
     height: 40%;
@@ -281,7 +315,7 @@ header #navbarContainer ul
    color: rgb(231, 231, 231); 
 } 
 
- #cardBtn{
+ .card-btn{
   
   text-transform: uppercase;
   border-radius: 12px;
@@ -300,7 +334,7 @@ header #navbarContainer ul
   font-family: 'Nunito Sans', sans-serif
 
 }
- #cardBtn:hover{
+ .card-btn:hover{
   background-color: #fff;
   animation: moveInBottom 0.5s ease-in-out infinite both;
   color:rgba(40,180,133,0.8) ;
@@ -710,12 +744,12 @@ input, select {
   transition: all .2s;
   position: relative;
   right: 50px;
-  font-size: 1rem;
+  font-size: .8rem;
   border: none;
   cursor: pointer;
   background-color: #fff;
   color: #285A84 ;
-  margin-top: 3rem;
+  margin-top: .5rem;
   font-family: 'Nunito Sans', sans-serif;
 margin-left: 250px;  
 font-weight: bolder;
