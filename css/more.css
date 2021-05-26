@@ -324,7 +324,7 @@ figure {
 .name1  {
   text-align: center;
   font-size: larger;
-  margin-left: 200px;
+  margin-left: 300px;
   /* color: black; */
   font-weight: 800;
 }
@@ -333,7 +333,7 @@ figure {
 .email2  {
   text-align: center;
   font-size: larger;
-  margin-left: 200px;
+  margin-left: 310px;
   /* color: black; */
   font-weight: 800;
 }
@@ -341,7 +341,7 @@ figure {
 .center1  {
   text-align: center;
   font-size: larger;
-  margin-left: 170px;
+  margin-left: 280px;
   /* color: black; */
   font-weight: 800;
 }
@@ -374,6 +374,7 @@ main form input ::placeholder {
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
+    
   }
 
   input[type=email], select {

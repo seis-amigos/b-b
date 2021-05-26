@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
-<html lang="en" >
-   
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/real.css">
     <title>Real Estate</title>
 </head>
@@ -31,7 +32,7 @@
             </ul>
         </div>
         <div class="header-para">
-            
+
         </div>
         <!-- <div id="addHouse">
             <div class="add-house-contianer">
@@ -40,20 +41,22 @@
                 
             </div> -->
 
+
             <div class="header-para">
                 <span class="para-title">SELL | BUY</span>
                 <button class="add-btn" id="addBtn">Add house for sale</button>
             </div>
+
         </div>
-        
+
     </header>
 
     <main>
-        
+
         <div id="formContainer" class="form-container">
             <div class="add-form" id="addform">
                 <span class="close">&times;</span>
-                <form id="addHouseForm" class="add-house-form" >
+                <form id="addHouseForm" class="add-house-form">
                     <label for="select">Type</label>
                     <select name="select" id="selectType">
                         <option value="Villa">Villa</option>
@@ -72,12 +75,13 @@
                     <label for="image1">Image 1 path</label>
                     <input type="text" id="image1" name="image1" required>
                     <label for="image2">Image 2 path</label>
-                    <input type="text" id="image2" name="image2" >
+                    <input type="text" id="image2" name="image2">
                     <label for="image3">Image 3 path</label>
-                    <input type="text" id="image3" name="image3" >
-                    <input type="submit"  value="Add House" >
+                    <input type="text" id="image3" name="image3">
+                    <input type="submit" value="Add House">
                 </form>
             </div>
+
             </div>
             <!-- <div id="searchContianer">
                 <form id="searchForm" class="search-form">
@@ -89,10 +93,12 @@
                 </form>
             </div> -->
             
+
         <section id="cardHouses">
             <div class="house-card">
                 <div class="house-card-ineer">
                     <div class="house-card-front">
+
                        <div class="card-header1"></div>
                        <div class="house-info">
                            <p class="type">Villa</p>
@@ -121,6 +127,7 @@
 
             </div>
             <div class="house-card">
+
                <div class="house-card-ineer">
                    <div class="house-card-front">
                       <div class="card-header2"></div>
@@ -140,11 +147,21 @@
                             <li>3 units</li>
                         </ul>
                     </div>
-                    <div id="btnContainer">
-                        <button class="card-btn" id="cardBtn">
-                            See more
-                        </button>
+                    <div class="house-card-back">
+                        <div id="listContainer">
+                            <ul>
+                                <li>Location : salt Jordan</li>
+                                <li>Area :1300</li>
+                                <li>3 units</li>
+                            </ul>
+                        </div>
+                        <div id="btnContainer">
+                            <button class="card-btn" id="cardBtn">
+                                See more
+                            </button>
+                        </div>
                     </div>
+
                    </div>
                </div>
 
@@ -167,11 +184,21 @@
                             <li>3 room</li>
                         </ul>
                     </div>
-                    <div id="btnContainer">
-                        <button class="card-btn" id="cardBtn">
-                            See more
-                        </button>
+                    <div class="house-card-back">
+                        <div id="listContainer">
+                            <ul>
+                                <li>Location</li>
+                                <li>Area</li>
+                                <li>3 room</li>
+                            </ul>
+                        </div>
+                        <div id="btnContainer">
+                            <button class="card-btn" id="cardBtn">
+                                See more
+                            </button>
+                        </div>
                     </div>
+
                    </div>
                </div>
 
@@ -195,45 +222,57 @@
                             <li>Area</li>
                             <li>3 room</li>
                         </ul>
-                    </div>
-                    <div id="btnContainer">
-                        <button class="card-btn" id="cardBtn">
-                            See more
-                        </button>
-                    </div>
-                   </div>
-               </div>
 
-           </div>
+                    </div>
+                    <div class="house-card-back">
+                        <div id="listContainer">
+                            <ul>
+                                <li>Location</li>
+                                <li>Area</li>
+                                <li>3 room</li>
+                            </ul>
+                        </div>
+                        <div id="btnContainer">
+                            <button class="card-btn" id="cardBtn">
+                                See more
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-       </section>
-       <br>
-       <section id="cardHouses2">
-           
-      </section>
-     
+            </div>
+
+        </section>
+        <br>
+        <section id="cardHouses2">
+
+        </section>
+
     </main>
     <footer class="footer-basic ">
-        
+
         <div id="footer-logo" class="logo">
-            <div id="logo" class="center" >
-                <img src="images/logo.png" alt="" >
+            <div id="logo" class="center">
+                <img src="images/logo.png" alt="">
                 <!-- <span>Lorem.</span> -->
             </div>
         </div>
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                    class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+                href="#"><i class="icon ion-social-facebook"></i></a></div>
         <span class="copyright">Bayt Albuyut © 2021</span>
         <div id="footerQuickLink">
             <h4>QUICK LINKS</h4>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="real.html" >Real Estate</a></li>
+                <li><a href="real.html">Real Estate</a></li>
                 <li><a href="sales.html">Homes for Sales</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </footer>
     <script src="js/real.js"></script>
-    
+
 </body>
+
 </html>
