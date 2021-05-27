@@ -80,6 +80,8 @@ addHouseForm.addEventListener('submit', function (event) {
     setHouse();
 });
 
+// console.log(allHouses[0].images);
+console.log(allHouses);
 getHouse();
 let cardArray = [];
 function cardRender(type, location, area, decription, price, images) {
@@ -115,8 +117,10 @@ function cardRender(type, location, area, decription, price, images) {
         housCardInner.appendChild(houseCardBack);
         //---------------- back
         //---------------------
-        cardHeader.setAttribute('class', 'card-header');
+        cardHeader.setAttribute('class', 'card-image');
+        cardHeader.setAttribute('id',`hederImg${i}`);
         houseInfo.setAttribute('class', 'house-info');
+        
 
         houseInfo.innerHTML = `
         <p>${type}</p>
@@ -145,10 +149,11 @@ function cardRender(type, location, area, decription, price, images) {
         // cardHeader.setAttribute('id',`hederImg${i}`);
         // let cardHeaderImg=document.getElementById(`hederImg${i}`);
         // cardHeaderImg.style.backgroundImage=`url(${images[i]})`;
+        document.getElementById(`hederImg${i}`).style.backgroundImage= `url('${allHouses[i].images[0]}')`;
+        
         
     }
-    
-   
+    cardHederImage();
 }
 // ---------------------------------------------------------
 // Get the waiting id
@@ -159,19 +164,19 @@ function getID(btnId) {
     console.log(btnId);
     localStorage.setItem('index', JSON.stringify(btnId));
     waiting.style.display = 'block';
-    window.scrollTo(0, 400);
+    window.scrollTo(0, 50);
     setInterval(() => {
         window.location.replace("see-more.html");
 
     }, 2000);
 }
-var elms = document.querySelectorAll('button[class~="card-btn"]');
 
 
-console.log(elms);
+
+
 
 //--------------------------------------------------------------------------------
-let searchForm = document.getElementById('searchForm');
+// let searchForm = document.getElementById('searchForm');
 // let alls=document.getElementsByClassName('house-price');
 // console.log(document.getElementsByClassName('house-price'));
 // for (let i = 0; i < alls.length; i++) {
@@ -209,6 +214,23 @@ let searchForm = document.getElementById('searchForm');
 
 // });
 
+
+// -------------------------------- image in the same page -----------------
+
+
+function cardHederImage()
+{
+    if (allHouses.length!==0) {
+        for (let i = 0; i < allHouses.length; i++) {
+        
+       
+            
+            
+        }
+    }
+   
+}
+
 //------------------------------------------LocalStorge --------------------------------
 
 
@@ -220,14 +242,15 @@ function setHouse() {
 
 function getHouse() {
     let allData = JSON.parse(localStorage.getItem('houses'));
-    for (let i = 0; i < allData.length; i++) {
-        cardRender(allData[i].type, allData[i].location, allData[i].area, allData[i].decription, allData[i].price, allData[i].images);
-        if (i % 4 == 0) {
-            console.log('hi' + 1);
-
+    if(allHouses.length !== 0)
+    {
+        for (let i = 0; i < allData.length; i++) {
+            cardRender(allData[i].type, allData[i].location, allData[i].area, allData[i].decription, allData[i].price, allData[i].images);
+            
         }
+    
     }
-
+    
 }
 
 

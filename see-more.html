@@ -53,40 +53,88 @@
 
     <main>
         
-  
+  <section id="tableSection">
+    <div class="table-users">
+        <div class="header">House Information</div>
+        
+        <table cellspacing="0">
+           <tr>
+              <th>Picture</th>
+              <th>Property Type</th>
+              <th>Location</th>
+              <th>Price</th>
+              <th width="230">Brief Description </th>
+           </tr>
+     
+           <tr>
+              <td><img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage"></td>
+              <td><h4 id="typeofhouse"> </h4></td>
+              <td><h4 id="locationofhouse"> </h4></td>
+              <td><h4 id="priceofhouse"> </h4></td>
+              <td><h4 id="decriptionofhouse"> </h4></td>
+           </tr>
+           <tr  >
+               <td class="imgTD">
+                <img src="img/C.png" alt="" id="houseimage2">
+                <img src="img/C.png" alt="" id="houseimage3">
+            </td>
+            
+               
+           </tr>
+        </table>
+     </div>
+  </section>
 
-    <img src="images/headerImg.png" alt="" class="main-image" id="mainHouseImage">
 
  
     <!-- <h2 class="h2"> ONE BOOK AWAY TO MEET YOUR HOUSE </h2> -->
-    <h2 class="h2" id="typeofhouse"> </h2>
-    <h2 class="h2" id="locationofhouse"> </h2>
-    <h2 class="h2" id="decriptionofhouse"> </h2>
-    <h2 class="h2" id="priceofhouse"> </h2>
-    <img src="" alt="" id="houseimage2">
-    <img src="" alt="" id="houseimage3">
+    
+    
+
 
     <br>
     
 
     <div class="container">
         <form id="userform">
-            <label class="name1" for="fname">Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="e.g. John Smith" required>
-            <br>
-            <label class="center1" for="phoneNumber">Phone Number</label>
-            <input type="number" id="phoneNumber" name="phoneNumber" placeholder="e.g. +962XXXXXXXXX" required>
-            <br>
-            <label class="email2" for="email"> Email </label>
-            <input type="email" name="email" id="email" placeholder="e.g. joh.Smith@gmail.com" required>
-            <br>
-            <label class="center1" for="date"> Meeting Date </label>
-            <input type="text" name="date" id="date" placeholder="e.g. 26/12/1993" required>
-            <br>
-            <label class="center1" for="hour"> Meeting Hour </label><br>
-            <input type="time" name="hour" id="hour" step="any" placeholder="e.g. 18:00" min="09:00" max="18:00" required>
-            <br>
-            <input type="submit" value="Submit">
+            <div class="table-users">
+                <div class="header">booking form</div>
+            <table>
+                <tr>
+                    <td>
+                        <label class="" for="fname">Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="e.g. John Smith" required>
+                    </td>
+                    <td> 
+                        <label class="" for="phoneNumber">Phone Number</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="e.g. +962XXXXXXXXX" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="" for="email"> Email </label>
+                        <input type="email" name="email" id="email" placeholder="e.g. joh.Smith@gmail.com" required>
+                    </td>
+                    <td>
+                        <label class="" for="date"> Meeting Date </label>
+                        <input type="text" name="date" id="date" placeholder="e.g. 26/12/1993" required>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label class="" for="hour"> Meeting Hour </label>
+                        <input type="time" name="hour" id="hour" step="any" placeholder="e.g. 18:00" min="09:00" max="18:00" required>
+                    </td>
+          
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+
+                </tr>
+                
+            </table>
+    
         </form>
     </div>
 

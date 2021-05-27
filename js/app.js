@@ -25,4 +25,36 @@ setInterval(function() {
     }
   }, 5000);
   
-    
+
+
+  
+//get the add form contianer 
+let addForm = document.getElementById('formContainer');
+
+// get the span to close form
+let span = document.getElementById("close");
+
+let video=document.getElementById('video');
+
+
+// function to open the add form
+
+window.addEventListener('load', function(event) {
+    addForm.style.display = 'block';
+    addForm.style.visibility = 'visible';
+});
+// function to close the add form
+span.addEventListener('click', function () {
+    addForm.style.display = 'none';
+    video.muted = true;
+    video.autoplay=true;
+
+});
+
+// close the form whem user click anywhere outside the form
+window.addEventListener('click', function () {
+    if (event.target == addForm) {
+        addForm.style.display = 'none';
+        video.muted = true;
+    }
+});
